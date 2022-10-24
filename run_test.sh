@@ -5,7 +5,7 @@ for (( count=1; count<=87; count++ ))
   do
     echo Test "$count"
     ./test_gen 
-    timeout 30 ./dummy_regulator
+    timeout 30 ./little_onion
     ./test_check_log
     rm -f test.CFG
     ./test_count
